@@ -21,7 +21,9 @@ class MusicStats:
     # since I mainly used the https://github.com/plamere/spotipy and https://github.com/felix-hilden/tekore.
 
     def stats(self, playlist_links: [list, str],
-              name: str, save_image: bool = True,
+              name: str,
+              show_image: bool = True,
+              save_image: bool = True,
               return_dict: bool = False):
         """An function which will generate an simple bar plot which these following parameters:
 
@@ -103,11 +105,10 @@ and can also generate an unavoidable server request error)."""
             plt.bar_label(splot.containers[0], size=10, label_type='center')
             plt.suptitle(f"{name.capitalize()} Stats", size=30)
             plt.title(f"Used {len(track_ids)} tracks for comparison")
-            plt.show()
             if save_image is True:
                 plt.savefig(f"{name.lower()} comparison.png")
-            else:
-                pass
+            if show_image is True:
+                plt.show()
             if return_dict is True:
                 return dict(zip(parameters, informations))
             else:
@@ -117,6 +118,7 @@ and can also generate an unavoidable server request error)."""
                    "or you are just asking to handle playlist that are really long."
 
     def stats_track(self, track_link: str,
+                    show_image: bool = True,
                     save_image: bool = True,
                     return_dict: bool = False):
         """Works on the same was as the function stats, except it only accepts one song."""
@@ -149,11 +151,10 @@ and can also generate an unavoidable server request error)."""
                 artist_name = track['artists'][0]['name']
                 plt.suptitle(f"{track_name} Stats", size=30)
                 plt.title(f"Stats from the song {track_name} by {artist_name}.")
-                plt.show()
                 if save_image is True:
-                    plt.savefig(f"{artist_name} - {track_name} comparison.png")
-                else:
-                    pass
+                    plt.savefig(f"{artist_name.lower()} - {track_name.lower()}_comparison.png")
+                if show_image is True:
+                    plt.show()
                 if return_dict is True:
                     return dict(zip(parameters, informations))
                 else:
