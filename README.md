@@ -37,6 +37,9 @@ Result:
 
 ![dubstep comparison](https://user-images.githubusercontent.com/102044040/199076320-b334c463-1174-40c6-9d6b-37e3accde196.png)
 
+```
+{'Danceability': 0.46, 'Energy': 0.963, 'Speechiness': 0.086, 'Acousticness': 0.004, 'Instrumentalness': 0.1, 'Valence': 0.052}
+```
 
 <h4> Parameters of this function: </h4>
 
@@ -56,6 +59,9 @@ Result:
 
 ![zomboy - dead man walking pt  1_comparison](https://user-images.githubusercontent.com/102044040/199075318-69b24c68-b909-4176-b0e7-afa23e70c9f5.png)
 
+```
+{'Danceability': 0.524, 'Energy': 0.913, 'Speechiness': 0.193, 'Acousticness': 0.023, 'Instrumentalness': 0.262, 'Valence': 0.234}
+```
 
 <h2> Extra functions: </h3>
 
