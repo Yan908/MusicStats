@@ -33,6 +33,11 @@ ms = MusicStats(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
 print(ms.stats("42EZ7AoyAisnG6k8Sza6SV", name="Dubstep", save_image=True, show_image=True, return_dict=True))
 ```
 
+Result:
+
+![dubstep comparison](https://user-images.githubusercontent.com/102044040/199076320-b334c463-1174-40c6-9d6b-37e3accde196.png)
+
+
 <h4> Parameters of this function: </h4>
 
 - playlist_links: Playlist Link or ID(Mandatory), can be either a list of playlists or just one playlist
@@ -46,6 +51,11 @@ print(ms.stats("42EZ7AoyAisnG6k8Sza6SV", name="Dubstep", save_image=True, show_i
 ```py
 print(ms.stats_track("1BocvYKP6Khn2AXOLqNmUS", save_image=True, show_image=True, return_dict=True))
 ```
+
+Result:
+
+![zomboy - dead man walking pt  1_comparison](https://user-images.githubusercontent.com/102044040/199075318-69b24c68-b909-4176-b0e7-afa23e70c9f5.png)
+
 
 <h2> Extra functions: </h3>
 
