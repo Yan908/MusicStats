@@ -38,8 +38,8 @@ print(ms.stats("42EZ7AoyAisnG6k8Sza6SV", name="Dubstep", save_image=True, show_i
 - playlist_links: Playlist Link or ID(Mandatory), can be either a list of playlists or just one playlist
 - name: The name you wanna save the stats(Also Mandatory)
 - show_file: If True, it shows the archive(Default: True)
-- save_file: If True, it saves the archive on your file
-- return_dict: If True, it will return the dict with the same data showed on the image but with dict format
+- save_file: If True, it saves the archive on your file(Default: True)
+- return_dict: If True, it will return the dict with the same data showed on the image but with dict format(Default: False)
 
 <h3> To get the music stats by a specific track: </h3>
 
